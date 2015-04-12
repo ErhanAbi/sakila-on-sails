@@ -20,12 +20,26 @@ module.exports = {
             type: 'email'
         },
 
-        addressId: {
+        active: {
+            type: 'boolean'
+        },
+
+        address: {
             model: 'address'
         },
 
-        active: {
-            type: 'boolean'
+        payments: {
+            collection: "payment",
+            via: "customer"
+        },
+
+        rentals: {
+            collection: "rental",
+            via: "customer"
+        },
+
+        store: {
+            model: "store"
         }
     }
 };

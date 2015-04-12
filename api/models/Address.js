@@ -19,7 +19,7 @@ module.exports = {
         district: {
             type: "string"
         },
-        cityId: {
+        city: {
             model: "city"
         },
         postalCode: {
@@ -27,6 +27,21 @@ module.exports = {
         },
         phone: {
             type: "string"
+        },
+
+        customers: {
+            collection: 'customer',
+            via: 'address'
+        },
+
+        stores: {
+            collection: 'store',
+            via: 'address'
+        },
+
+        staffs: {
+            collection: 'staff',
+            via: 'address'
         }
     }
 };

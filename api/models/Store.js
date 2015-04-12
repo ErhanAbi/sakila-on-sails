@@ -8,11 +8,26 @@
 module.exports = {
     schema: true,
     attributes: {
-        managerStaffId: {
-            model: "staff"
+        managerStaff: {
+            model: "Staff"
         },
-        addressId: {
-            model: "address"
+        address: {
+            model: "Address"
+        },
+
+        films: {
+            collection: "Film",
+            through: "inventory"
+        },
+
+        customers: {
+            collection: "Customer",
+            via: "store"
+        },
+
+        personel: {
+            collection: "Staff",
+            via: "store"
         }
     }
 };

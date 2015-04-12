@@ -9,10 +9,10 @@ module.exports = {
     schema: true,
     autoPk: false,
     attributes: {
-        actorId: {
+        actor: {
             model: "actor"
         },
-        filmId: {
+        film: {
             model: "film"
         }
     }

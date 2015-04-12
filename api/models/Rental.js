@@ -11,17 +11,22 @@ module.exports = {
         rentalDate: {
             type: "datetime"
         },
-        inventoryId: {
+        inventory: {
             model: "inventory"
         },
-        customerId: {
+        customer: {
             model: "customer"
         },
         returnDate: {
             type: "datetime"
         },
-        staffId: {
+        staff: {
             model: "staff"
+        },
+
+        payments: {
+            collection: "payment",
+            via: "rental"
         }
     }
 };

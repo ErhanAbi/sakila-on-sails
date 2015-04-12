@@ -14,30 +14,13 @@ module.exports = {
         lastName: {
             type: "string"
         },
-        addressId: {
+        
+        address: {
             model: "address"
-        },
-        picture: {
-            type: "binary"
         },
 
         email: {
             type: "email"
-        },
-
-        stores: {
-            collection: "store",
-            via: "managerStaffId"
-        },
-
-        payments: {
-            collection: "payment",
-            via: "staffId"
-        },
-
-        rentals: {
-            collection: "rental",
-            via: "staffId"
         },
 
         active: {
@@ -52,6 +35,24 @@ module.exports = {
             type: "string"
         },
 
+        store: {
+            model: "store"
+        },
+
+        managedStores: {
+            collection: "store",
+            via: "managerStaff"
+        },
+
+        payments: {
+            collection: "payment",
+            via: "staff"
+        },
+
+        rentals: {
+            collection: "rental",
+            via: "staff"
+        },
 
         toJSON: function() {
             var staff = this.toObject();

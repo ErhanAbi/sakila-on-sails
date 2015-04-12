@@ -11,5 +11,15 @@ module.exports = {
         name: {
             type: "string"
         }
-    }
+    },
+
+    originalFilms: {
+        collection: "film",
+        via: "originalLanguage"
+    },
+
+    // translatedFilms: {
+    //     collection: "film",
+    //     via: "language"
+    // }
 };

@@ -8,12 +8,17 @@
 module.exports = {
     schema: true,
     attributes: {
-        filmId: {
-            midel: "film"
+        film: {
+            model: "film"
         },
 
-        storeId: {
+        store: {
             model: "store"
+        },
+
+        filmText: {
+            collection: "film_text",
+            via: "film"
         }
     }
 };

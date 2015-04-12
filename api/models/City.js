@@ -11,8 +11,12 @@ module.exports = {
         city: {
             type: "string"
         },
-        countryId: {
+        country: {
             model: "country"
+        },
+        addresses: {
+            collection: "address",
+            via: "city"
         }
     }
 };

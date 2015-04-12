@@ -10,6 +10,10 @@ module.exports = {
     attributes: {
         name: {
             type: "string"
+        },
+        films: {
+            collection: "film",
+            through: "film_category"
         }
     }
 };

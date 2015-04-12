@@ -28,11 +28,11 @@ module.exports = {
             type: 'integer'
         },
 
-        languageId: {
+        language: {
             model: "language"
         },
 
-        originalLanguageId: {
+        originalLanguage: {
             model: "language"
         },
 
@@ -65,6 +65,16 @@ module.exports = {
         actors: {
             collection: 'actor',
             through: 'film_actor'
+        },
+
+        categories: {
+            collection: "category",
+            through: "film_category"
+        },
+
+        inStores: {
+            collection: "store",
+            through: "inventory"
         }
     },
 

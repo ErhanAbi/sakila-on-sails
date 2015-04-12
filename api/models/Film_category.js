@@ -10,10 +10,10 @@ module.exports = {
     autoPK: false,
 
     attributes: {
-        filmId: {
+        film: {
             model: "film"
         },
-        categoryId: {
+        category: {
             model: "category"
         }
     }

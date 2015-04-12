@@ -8,13 +8,13 @@
 module.exports = {
     schema: true,
     attributes: {
-        customerId: {
+        customer: {
             model: "customer"
         },
-        staffId: {
+        staff: {
             model: "staff"
         },
-        rentalId: {
+        rental: {
             model: "rental"
         },
         amount: {

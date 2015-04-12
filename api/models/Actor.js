@@ -19,8 +19,8 @@ module.exports = {
         },
 
         films: {
-            collection: 'film_actor',
-            via: 'filmId'
+            collection: 'film',
+            through: 'film_actor'
         }
     }
 };

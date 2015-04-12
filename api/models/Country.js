@@ -10,6 +10,10 @@ module.exports = {
     attributes: {
         country: {
             type: "string"
+        },
+        cities: {
+            collection: "city",
+            via: "country"
         }
     }
 };
